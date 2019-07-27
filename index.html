@@ -44,7 +44,7 @@
   </nav>
 
   <section class="container-fluid px-0">
-    <div class="row align-items-center">
+    <div class="row align-items-center ">
       <div class="col-lg-6 ">
         <div id="groupSpan" class="text-white text-center d-none d-lg-block">
           <h3 class="">MUSEUM<span>/</span>OF <span>/</span>CANDY</h3>
@@ -61,18 +61,31 @@
 
   </section>
   <section class="container-fluid px-0">
-    <div class="row align-items-center">
-      <div class="col-md-6">
+    <div class="row align-items-center content">
+      <div class="col-md-6 order-2 order-md-1">
         <img src="imgs/milk.png" class="img-fluid">
       </div>
-      <div class="col-md-6 text-center ">
+      <div id="strong" class="col-md-6 text-center order-1 order-md-2 mb-5 mb-md-0 ">
         <h2>MUSEUM OF CANDY</h2>
         <img src="imgs/lolli_icon.png">
-        <p class="lead">
+        <p class="lead ">
           Serving Size: .35 oz (10 g) Serving per Container: about 13. Net wt. 4.86 oz (138 g) INGREDIENTS Millet jelly,
           sugar, palm oil, salt, lecithin(soy), powdered milk.
         </p>
       </div>
+    </div>
+    <div class="row align-items-center content">
+        <div id="strong" class="col-md-6 text-center mb-5 mb-md-0">
+            <h2>MUSEUM OF CANDY</h2>
+            <img src="imgs/lolli_icon.png">
+            <p class="lead ">
+              Serving Size: Sugar, Dextrose, Corn Syrup, Gum Base, Tapioca Dextrin, Titanium Dioxide, Confectioner's Glaze, Carnauba Wax, Corn Starch, Artificial Flavors, Artificial Colors, (FD&C Red 40, Blue 1, Yellow 5, Yellow 6, Red 3), and BHT (to maintain freshness).
+            </p>
+          </div>
+      <div class="col-md-6 ">
+        <img src="imgs/gumball.png" class="img-fluid">
+      </div>
+     
     </div>
   </section>
 
@@ -88,6 +101,16 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+    <script>
+      $(function() {
+        $(document).scroll(function(){
+          var $nav=$("#mainNavbar");
+          $nav.toggleClass("scrolled",$(this).scrollTop()>$nav.height());
+        })
+
+      })
+      
+     </script>
 
 </body>
 
